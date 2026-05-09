@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext.jsx'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
@@ -13,9 +13,11 @@ import ArtistDashboard from './pages/ArtistDashboard.jsx'
 import ArtistProfileEdit from './pages/ArtistProfileEdit.jsx'
 import Admin from './pages/Admin.jsx'
 
+const basename = import.meta.env.PROD ? '/Glamora' : ''
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <AuthProvider>
         <Navbar />
         <main>
@@ -30,6 +32,7 @@ export default function App() {
             <Route path="/artist/dashboard" element={<ArtistDashboard />} />
             <Route path="/artist/profile/edit" element={<ArtistProfileEdit />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
         <Footer />
