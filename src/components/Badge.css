@@ -1,0 +1,80 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-family: var(--font-family);
+  white-space: nowrap;
+}
+
+.badge-sm {
+  font-size: var(--font-size-xs);
+  padding: 4px 10px;
+}
+
+.badge-md {
+  font-size: var(--font-size-sm);
+  padding: 6px 14px;
+}
+
+.badge-lg {
+  font-size: var(--font-size-base);
+  padding: 8px 18px;
+}
+
+/* ============ Variants ============ */
+.badge-primary {
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+}
+
+.badge-secondary {
+  background: var(--secondary-light);
+  color: var(--secondary-dark);
+}
+
+.badge-success {
+  background: var(--success-soft);
+  color: #2f855a;
+}
+
+.badge-warning {
+  background: var(--warning-soft);
+  color: #c05621;
+}
+
+.badge-error {
+  background: var(--error-soft);
+  color: var(--error);
+}
+
+.badge-info {
+  background: var(--info-soft);
+  color: #2b6cb0;
+}
+
+.badge-gold {
+  background: var(--accent-soft);
+  color: #875f00;
+}
+
+.badge-outline {
+  background: transparent;
+  color: var(--text-medium);
+  border: 1.5px solid var(--border);
+}
+
+/* ============ Dot ============ */
+.badge-dot-indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.badge-icon {
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,105 @@
+:root {
+  /* ============ Primary Colors ============ */
+  --primary: #E8698A;
+  --primary-light: #F8B4C8;
+  --primary-dark: #C84B6E;
+  --primary-soft: #FEF0F4;
+
+  /* ============ Secondary (Lavender) ============ */
+  --secondary: #C4B5D9;
+  --secondary-light: #EDE8F7;
+  --secondary-dark: #9B88C0;
+
+  /* ============ Accent (Gold) ============ */
+  --accent: #D4AF37;
+  --accent-light: #F5E6A3;
+  --accent-soft: #FDF8E7;
+
+  /* ============ Neutral / Background ============ */
+  --cream: #FFF5F0;
+  --cream-dark: #FAE8E0;
+  --white: #FFFFFF;
+  --bg-light: #FFF8FB;
+  --bg-section: #FEF6F9;
+
+  /* ============ Text ============ */
+  --text-dark: #2D1B22;
+  --text-medium: #5A4055;
+  --text-gray: #8A7080;
+  --text-light: #BBA8B2;
+
+  /* ============ Borders ============ */
+  --border: #F0D8E0;
+  --border-light: #FAF0F3;
+
+  /* ============ Status Colors ============ */
+  --success: #48BB78;
+  --success-soft: #F0FFF4;
+  --error: #E53E3E;
+  --error-soft: #FFF5F5;
+  --warning: #ED8936;
+  --warning-soft: #FFFAF0;
+  --info: #4299E1;
+  --info-soft: #EBF8FF;
+
+  /* ============ Shadows ============ */
+  --shadow-xs: 0 1px 4px rgba(232, 105, 138, 0.06);
+  --shadow-sm: 0 2px 10px rgba(232, 105, 138, 0.08);
+  --shadow-md: 0 4px 24px rgba(232, 105, 138, 0.12);
+  --shadow-lg: 0 8px 40px rgba(232, 105, 138, 0.16);
+  --shadow-xl: 0 16px 60px rgba(232, 105, 138, 0.20);
+  --shadow-card: 0 2px 20px rgba(45, 27, 34, 0.06);
+  --shadow-card-hover: 0 8px 40px rgba(45, 27, 34, 0.12);
+
+  /* ============ Border Radius ============ */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-2xl: 48px;
+  --radius-full: 9999px;
+
+  /* ============ Typography ============ */
+  --font-family: 'Tajawal', 'Arial', sans-serif;
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-md: 1.125rem;   /* 18px */
+  --font-size-lg: 1.25rem;    /* 20px */
+  --font-size-xl: 1.5rem;     /* 24px */
+  --font-size-2xl: 2rem;      /* 32px */
+  --font-size-3xl: 2.5rem;    /* 40px */
+  --font-size-4xl: 3rem;      /* 48px */
+  --font-size-5xl: 3.75rem;   /* 60px */
+
+  /* ============ Spacing ============ */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* ============ Transitions ============ */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.15s ease;
+  --transition-slow: all 0.5s ease;
+
+  /* ============ Layout ============ */
+  --container-max: 1200px;
+  --container-padding: 24px;
+  --navbar-height: 72px;
+
+  /* ============ Gradients ============ */
+  --gradient-primary: linear-gradient(135deg, #E8698A 0%, #C4B5D9 100%);
+  --gradient-hero: linear-gradient(135deg, #FFF0F5 0%, #F5F0FF 50%, #FFF5E0 100%);
+  --gradient-card: linear-gradient(180deg, transparent 60%, rgba(45, 27, 34, 0.7) 100%);
+  --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F5E6A3 50%, #D4AF37 100%);
+}

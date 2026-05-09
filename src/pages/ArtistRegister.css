@@ -1,0 +1,127 @@
+.artist-register-form {
+  max-width: 520px;
+}
+
+.artist-form-section {
+  background: var(--white);
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.artist-section-title {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: var(--text-medium);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: var(--space-2);
+}
+
+/* ============ Home Service Toggle ============ */
+.home-service-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  cursor: pointer;
+  padding: var(--space-4);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-light);
+  transition: var(--transition);
+}
+
+.home-service-toggle:has(.home-service-checkbox:checked) {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.home-service-checkbox {
+  display: none;
+}
+
+.toggle-content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex: 1;
+}
+
+.toggle-icon {
+  font-size: 1.5rem;
+}
+
+.toggle-label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.toggle-desc {
+  font-size: var(--font-size-xs);
+  color: var(--text-gray);
+  margin-top: 2px;
+}
+
+.toggle-switch {
+  width: 44px;
+  height: 24px;
+  border-radius: var(--radius-full);
+  background: var(--border);
+  position: relative;
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.toggle-switch::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  top: 3px;
+  right: 3px;
+  transition: var(--transition);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.toggle-on {
+  background: var(--primary);
+}
+
+.toggle-on::after {
+  right: auto;
+  left: 3px;
+}
+
+/* ============ Artist Join Stats ============ */
+.artist-join-stats {
+  display: flex;
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.join-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: white;
+}
+
+.join-stat-num {
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+}
+
+.join-stat span:last-child {
+  font-size: var(--font-size-xs);
+  opacity: 0.8;
+}

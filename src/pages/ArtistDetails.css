@@ -1,0 +1,465 @@
+.artist-details-page {
+  padding-bottom: 100px;
+}
+
+/* ============ Hero Cover ============ */
+.artist-hero-cover {
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+}
+
+.artist-cover-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artist-cover-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(45,27,34,0.3), rgba(45,27,34,0.7));
+}
+
+.artist-hero-breadcrumb {
+  position: absolute;
+  bottom: var(--space-5);
+  right: 0;
+  left: 0;
+}
+
+.breadcrumb-link {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(8px);
+  transition: var(--transition);
+}
+
+.breadcrumb-link:hover {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+/* ============ Profile Card ============ */
+.artist-profile-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-lg);
+  margin-top: -60px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+  border: 1.5px solid var(--border-light);
+}
+
+.artist-profile-left {
+  display: flex;
+  gap: var(--space-5);
+  flex: 1;
+  min-width: 0;
+}
+
+.artist-profile-avatar-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.artist-profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-light);
+  box-shadow: var(--shadow-md);
+}
+
+.artist-online-dot {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  width: 18px;
+  height: 18px;
+  background: var(--success);
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.artist-profile-business {
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.artist-profile-name {
+  font-size: var(--font-size-base);
+  color: var(--text-gray);
+  margin-bottom: var(--space-2);
+}
+
+.artist-profile-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.artist-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--font-size-sm);
+  color: var(--text-gray);
+}
+
+.artist-profile-badges {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+/* Profile right */
+.artist-profile-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-4);
+  flex-shrink: 0;
+}
+
+.artist-rating-summary {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.big-rating-num {
+  font-size: var(--font-size-3xl);
+  font-weight: 900;
+  color: var(--text-dark);
+  line-height: 1;
+}
+
+.big-rating-stars {
+  color: var(--accent);
+  font-size: var(--font-size-lg);
+  letter-spacing: 2px;
+}
+
+.big-rating-count {
+  font-size: var(--font-size-sm);
+  color: var(--text-gray);
+  margin-top: 2px;
+}
+
+.artist-starting-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.price-from-label {
+  font-size: var(--font-size-xs);
+  color: var(--text-light);
+}
+
+.price-from-value {
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  color: var(--primary);
+}
+
+/* ============ Tabs ============ */
+.artist-tabs {
+  display: flex;
+  gap: var(--space-1);
+  margin-top: var(--space-6);
+  border-bottom: 2px solid var(--border-light);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.artist-tab {
+  padding: var(--space-3) var(--space-5);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--text-gray);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.artist-tab:hover {
+  color: var(--primary);
+}
+
+.artist-tab-active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+  background: var(--primary-soft);
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+}
+
+/* ============ Tab Content ============ */
+.artist-tab-content {
+  margin-top: var(--space-6);
+}
+
+.tab-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+/* Bio */
+.artist-bio-section h3 {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--space-3);
+}
+
+.artist-bio-section p {
+  font-size: var(--font-size-base);
+  color: var(--text-medium);
+  line-height: 1.8;
+}
+
+/* Services */
+.services-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  background: var(--white);
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.service-card-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.service-card-info {
+  flex: 1;
+}
+
+.service-name {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.service-duration {
+  font-size: var(--font-size-sm);
+  color: var(--text-gray);
+}
+
+.service-card-price {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-shrink: 0;
+}
+
+.service-price {
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  color: var(--primary);
+}
+
+/* Availability */
+.availability-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+.availability-title {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--space-4);
+}
+
+.dates-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.date-chip {
+  background: var(--secondary-light);
+  color: var(--secondary-dark);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.times-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.time-chip-large {
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  border: 1.5px solid var(--primary-light);
+}
+
+.availability-cta {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--space-4);
+}
+
+/* Reviews */
+.reviews-overview {
+  background: var(--gradient-hero);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.reviews-big-rating {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.reviews-rating-num {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.reviews-stars-big {
+  color: var(--accent);
+  font-size: var(--font-size-xl);
+  letter-spacing: 3px;
+}
+
+.reviews-rating-label {
+  font-size: var(--font-size-sm);
+  color: var(--text-gray);
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.no-reviews {
+  text-align: center;
+  color: var(--text-gray);
+  padding: var(--space-8);
+}
+
+/* ============ Error ============ */
+.artist-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  gap: var(--space-4);
+  text-align: center;
+}
+
+.artist-error span {
+  font-size: 4rem;
+}
+
+/* ============ Floating Book Bar ============ */
+.floating-book-bar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: white;
+  border-top: 1px solid var(--border);
+  padding: var(--space-3) var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.floating-book-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.floating-artist-name {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.floating-price {
+  font-size: var(--font-size-sm);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 768px) {
+  .artist-profile-card {
+    flex-direction: column;
+    margin-top: -40px;
+  }
+
+  .artist-profile-right {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .availability-section {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    flex-wrap: wrap;
+  }
+}

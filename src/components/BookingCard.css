@@ -1,0 +1,167 @@
+.booking-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-card);
+  border: 1.5px solid var(--border-light);
+  transition: var(--transition);
+}
+
+.booking-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.booking-card-confirmed {
+  border-right: 4px solid var(--success);
+}
+
+.booking-card-pending {
+  border-right: 4px solid var(--warning);
+}
+
+.booking-card-completed {
+  border-right: 4px solid var(--info);
+}
+
+.booking-card-cancelled {
+  border-right: 4px solid var(--error);
+  opacity: 0.75;
+}
+
+.booking-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+  gap: var(--space-3);
+}
+
+.booking-artist-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.booking-artist-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-light);
+}
+
+.booking-artist-name {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.booking-business-name {
+  font-size: var(--font-size-sm);
+  color: var(--text-gray);
+}
+
+.booking-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4) 0;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: var(--space-4);
+}
+
+.booking-detail-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+}
+
+.booking-detail-icon {
+  font-size: 1rem;
+  width: 20px;
+  flex-shrink: 0;
+}
+
+.booking-detail-label {
+  color: var(--text-gray);
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.booking-detail-value {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.booking-notes {
+  background: var(--cream);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-sm);
+  color: var(--text-medium);
+  margin-bottom: var(--space-4);
+}
+
+.booking-notes-label {
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.booking-card-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.booking-price-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.booking-price-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-sm);
+  color: var(--text-gray);
+}
+
+.booking-total-price {
+  font-size: var(--font-size-lg);
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.booking-deposit {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.booking-remaining {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.booking-cancel-btn {
+  background: var(--error-soft);
+  color: var(--error);
+  border: 1.5px solid var(--error);
+  border-radius: var(--radius-full);
+  padding: 8px 20px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.booking-cancel-btn:hover {
+  background: var(--error);
+  color: var(--white);
+}

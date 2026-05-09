@@ -1,0 +1,159 @@
+.payment-box {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1.5px solid var(--border-light);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  position: sticky;
+  top: calc(var(--navbar-height) + 20px);
+}
+
+.payment-header {
+  background: var(--gradient-primary);
+  padding: var(--space-4) var(--space-6);
+}
+
+.payment-title {
+  font-size: var(--font-size-lg);
+  font-weight: 800;
+  color: white;
+}
+
+/* ============ Summary ============ */
+.payment-summary {
+  padding: var(--space-5) var(--space-6);
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.payment-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-sm);
+}
+
+.payment-row-label {
+  color: var(--text-gray);
+}
+
+.payment-row-value {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.payment-row-total {
+  padding-top: var(--space-3);
+  border-top: 1px dashed var(--border);
+  margin-top: var(--space-1);
+}
+
+.payment-total-price {
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  color: var(--primary);
+}
+
+/* ============ Deposit ============ */
+.payment-deposit-info {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-6);
+  background: var(--accent-soft);
+  border-bottom: 1px solid var(--border-light);
+  align-items: flex-start;
+}
+
+.deposit-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.deposit-title {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: #875f00;
+  margin-bottom: 4px;
+}
+
+.deposit-amount {
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  color: #875f00;
+}
+
+.deposit-note {
+  font-size: var(--font-size-xs);
+  color: var(--text-gray);
+  margin-top: 4px;
+}
+
+/* ============ Payment Methods ============ */
+.payment-methods-section {
+  padding: var(--space-5) var(--space-6);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.payment-methods-title {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--text-medium);
+  margin-bottom: var(--space-3);
+}
+
+.payment-methods-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+}
+
+.payment-method-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+  background: var(--bg-light);
+}
+
+.payment-method-card:hover {
+  border-color: var(--primary-light);
+  background: var(--primary-soft);
+}
+
+.payment-method-card.selected {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  box-shadow: 0 0 0 2px rgba(232, 105, 138, 0.15);
+}
+
+.payment-method-radio {
+  display: none;
+}
+
+.payment-method-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.payment-method-label {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* ============ Security ============ */
+.payment-security {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-6);
+  font-size: var(--font-size-xs);
+  color: var(--text-gray);
+  background: var(--bg-section);
+}

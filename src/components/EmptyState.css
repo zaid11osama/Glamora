@@ -1,0 +1,38 @@
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-20) var(--space-6);
+  gap: var(--space-3);
+}
+
+.empty-state-icon {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: var(--space-2);
+  animation: emptyFloat 3s ease-in-out infinite;
+}
+
+@keyframes emptyFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.empty-state-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.empty-state-desc {
+  font-size: var(--font-size-base);
+  color: var(--text-gray);
+  max-width: 380px;
+  line-height: 1.7;
+}
+
+.empty-state-action {
+  margin-top: var(--space-4);
+}

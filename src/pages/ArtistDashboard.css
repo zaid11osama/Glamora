@@ -1,0 +1,379 @@
+.artist-dashboard {
+  min-height: 100vh;
+  padding-bottom: var(--space-16);
+}
+
+/* ============ Header ============ */
+.artist-dash-header {
+  background: linear-gradient(135deg, #2D1B22 0%, #4A2535 100%);
+  padding: var(--space-8) 0;
+}
+
+.artist-dash-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.artist-dash-welcome {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.artist-dash-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-light);
+  box-shadow: 0 0 0 4px rgba(232, 105, 138, 0.3);
+  flex-shrink: 0;
+}
+
+.artist-dash-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.artist-dash-subtitle {
+  font-size: var(--font-size-base);
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: var(--space-3);
+}
+
+.artist-dash-badges {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.artist-dash-actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+/* ============ Body ============ */
+.artist-dash-body {
+  padding: var(--space-8) 0;
+}
+
+/* Stats Grid */
+.artist-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.artist-stat-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-card);
+  border-top: 4px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  transition: var(--transition);
+}
+
+.artist-stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.artist-stat-primary { border-top-color: var(--primary); }
+.artist-stat-success { border-top-color: var(--success); }
+.artist-stat-gold { border-top-color: var(--accent); }
+.artist-stat-lavender { border-top-color: var(--secondary); }
+
+.artist-stat-icon {
+  font-size: 2rem;
+}
+
+.artist-stat-value {
+  font-size: var(--font-size-3xl);
+  font-weight: 900;
+  color: var(--text-dark);
+  line-height: 1;
+}
+
+.artist-stat-label {
+  font-size: var(--font-size-sm);
+  color: var(--text-gray);
+}
+
+/* ============ Main Layout ============ */
+.artist-dash-main {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+/* ============ Left Column ============ */
+.artist-dash-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+/* Profile Completion */
+.profile-completion-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-card);
+  border: 1.5px solid var(--border-light);
+}
+
+.completion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-3);
+}
+
+.completion-header h3 {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.completion-percent {
+  font-size: var(--font-size-xl);
+  font-weight: 900;
+  color: var(--primary);
+}
+
+.completion-bar-wrap {
+  height: 10px;
+  background: var(--border-light);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: var(--space-4);
+}
+
+.completion-bar-fill {
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-full);
+  transition: width 0.5s ease;
+}
+
+.completion-tips {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.completion-tip {
+  font-size: var(--font-size-sm);
+  color: var(--text-gray);
+}
+
+.completion-tip-todo {
+  color: var(--text-light);
+}
+
+.completion-edit-btn {
+  display: block;
+  text-align: center;
+  background: var(--gradient-primary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.completion-edit-btn:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+/* Dash Cards */
+.dash-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-card);
+  border: 1.5px solid var(--border-light);
+}
+
+.dash-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-4);
+}
+
+.dash-card-header h3 {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.availability-mini-calendar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.mini-date-chip {
+  background: var(--secondary-light);
+  color: var(--secondary-dark);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+}
+
+/* Earnings */
+.earnings-summary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.earnings-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-sm);
+  color: var(--text-gray);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.earnings-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.earnings-value {
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.earnings-highlight {
+  color: var(--primary);
+}
+
+/* ============ Right Column ============ */
+.bookings-section {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  border: 1.5px solid var(--border-light);
+  overflow: hidden;
+}
+
+.bookings-section-header {
+  padding: var(--space-5) var(--space-6);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.bookings-section-header h2 {
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.bookings-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border-light);
+  background: var(--bg-section);
+}
+
+.bookings-tab {
+  flex: 1;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--text-gray);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.bookings-tab:hover {
+  color: var(--primary);
+}
+
+.bookings-tab-active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+  background: var(--white);
+}
+
+.bookings-list {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.no-bookings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-10);
+  gap: var(--space-3);
+  color: var(--text-gray);
+}
+
+.no-bookings span {
+  font-size: 3rem;
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 1100px) {
+  .artist-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .artist-dash-main {
+    grid-template-columns: 1fr;
+  }
+
+  .artist-dash-left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  .profile-completion-card {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .artist-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .artist-dash-left {
+    grid-template-columns: 1fr;
+  }
+
+  .artist-dash-header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
